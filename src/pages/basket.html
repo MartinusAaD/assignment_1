@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/basket.css">
+        <title>Basket - Storename.com</title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav class="navbar">
+                
+                <a class="navbar__hamburger-menu button">    
+                    <img src="../assets/icons/menu-lines.svg" alt="">
+                </a>
+
+                <h1 class="navbar__heading">
+                    <a href="../index.html">Storename</a>
+                </h1> 
+
+                <form class="navbar__form">
+                    <input 
+                        class="navbar__search-bar"
+                        id="search-bar"
+                        type="text" 
+                        placeholder="Search ..."
+                    />
+                </form>
+
+                <a href="./basket.html" class="navbar__basket button">
+                    <p>Basket</p> 
+                    <img src="../assets/icons/shopping-cart.svg" alt="Shopping Card img">
+                </a>    
+
+                
+                <a href="#" class="navbar__my-profile button">
+                    <p>My Profile</p> 
+                    <img src="../assets/icons/user.svg" alt="User Profile img">
+                </a>
+             
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section> 
+                    <a href="/src/index.html" class="button">
+                        <img src="../assets/icons/arrow-left.svg" alt="Back arrow" class="back-arrow"/>
+                        Continue Shopping
+                    </a>
+            </section>
+
+            
+
+            <!-- Basket Content -->
+            <section>
+
+                <fieldset>
+                    <legend>Basket</legend>
+
+
+                </fieldset>
+
+            </section>
+
+            
+
+            <form class="contact-details">
+
+                <!-- Contact Details -->
+                <fieldset >
+                    <legend>Contact Details</legend>
+
+                    <label for="first-name">First Name:</label>
+                        <input 
+                            type="text"
+                            id="first-name"
+                            class="input-field"
+                            required
+                            placeholder="John"
+                            maxlength="30"
+                        />
+
+                    <label for="last-name">Last Name:</label>
+                        <input 
+                            type="text"
+                            id="last-name"
+                            class="input-field"
+                            required
+                            placeholder="Doe"
+                            maxlength="30"
+                        >
+
+                    <label for="country">Country:</label>
+                    <select name="country" id="country" class="input-field">
+                        <option value="Norway">Norway</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Denmmark">Denmark</option>
+                    </select>
+
+                    <label for="address">Address:</label>
+                    <input 
+                        type="text"
+                        id="address"
+                        class="input-field"
+                        required
+                        placeholder="Example 1a"
+                        maxlength="40"
+                    />
+
+                    <label for="postal-code">Postal Code:</label>
+                    <input 
+                        type="number"
+                        id="postal-code"
+                        class="input-field"
+                        required
+                        placeholder="0000"
+                        min="4"
+                        max="4"
+                    />      
+
+                    <label for="email">Email Address:</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            class="input-field"
+                            required
+                            placeholder="john.doe@email.com"
+                            maxlength="50"
+                        />
+
+                    <label for="phone-number">Phone Number:</label>
+                    <input 
+                        type="tel"
+                        id="phone-number"
+                        class="input-field"
+                        required
+                        placeholder="12345678"
+                        min="8"
+                        max="8"
+                    />
+
+                    <!-- Password Section -->
+
+                    <p class="contact-details__password">If you would like to save and register current and future purchases, feel free to type in a password below, in order to create an account with storename.</p>
+
+                    <label for="password">Password:</label>
+                    <input 
+                        type="password"
+                        id="password"
+                        class="input-field"
+                        placeholder="********"
+                        minlength="8"
+                    />
+
+                    <input 
+                        type="password"
+                        id="password"
+                        class="input-field"
+                        placeholder="********"
+                        minlength="8"
+                    />
+
+                    
+                    <div class="password-requirements">
+                        <p >Password must include the following:</p>
+                        <ul>  
+                            <li>A mimimum of 8 characters</li>
+                            <li>At least 1 uppercase and 1 lowercase character</li>
+                            <li>At least one special symbol, for example: !?#=;</li>
+                        </ul>
+                    </div>
+                    
+
+                </fieldset>
+
+                
+
+                <!-- Checkbox for Shipping Details -->
+                <fieldset class="shipping-checker">
+                    <input 
+                        type="checkbox" 
+                        id="same-as-contact" 
+                        name="same-as-contact"
+                    />
+                    <label for="same-as-contact" class="same-as-contact"> Check if Shipping Details are the same as Contact Details</label>
+                </fieldset>
+
+                <!-- Shipping Details - Display if "same-as-contact" isn't checked -->
+                <fieldset> 
+                    <legend>Shipping Details</legend>
+
+                    <label for="first-name-s">First Name:</label>
+                        <input 
+                            type="text"
+                            id="first-name-s"
+                            class="input-field"
+                            placeholder="John"
+                            required
+                            maxlength="30"
+                        />
+
+                    <label for="last-name-s">Last Name:</label>
+                        <input 
+                            type="text"
+                            id="last-name-s"
+                            class="input-field"
+                            placeholder="Doe"
+                            required
+                            maxlength="30"
+                        >
+
+                    <label for="country-s">Country:</label>
+                    <select name="country-s" id="country-s" class="input-field">
+                        <option value="Norway">Norway</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Denmmark">Denmark</option>
+                    </select>
+                    
+                    <label for="address-s">Address:</label>
+                    <input 
+                        type="text"
+                        id="address-s"
+                        class="input-field"
+                        required
+                        placeholder="Example 1a"
+                        maxlength="40"
+                    />              
+
+                    <label for="postal-code-s">Postal Code:</label>
+                    <input 
+                        type="number"
+                        id="postal-code-s"
+                        class="input-field"
+                        required
+                        placeholder="0000"
+                        min="4"
+                        max="4"
+                    />
+
+                    <label for="email-s">Email Address:</label>
+                        <input 
+                            type="email"
+                            id="email-s"
+                            class="input-field"
+                            required
+                            placeholder="john.doe@email.com"
+                        />
+
+                    <label for="phone-number-s">Phone Number:</label>
+                    <input 
+                        type="tel"
+                        id="phone-number-s"
+                        class="input-field"
+                        required
+                        placeholder="12345678"
+                        min="8"
+                        max="8"
+                    />
+
+
+                </fieldset>
+
+                
+
+                <!-- Payment Details -->
+                <fieldset>
+                    <legend>Payment Details</legend>
+
+                    <label for="payment-method">Payment Method</label>
+                    
+                    <select 
+                        name="payment-method" 
+                        id="payment-method"
+                        class="input-field"
+                    >
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Vipps</option>
+                        <option value="Klarna">Klarna</option>
+                    </select>
+
+                    <label for="card-number">Card Number</label>
+                        <input 
+                            type="number"
+                            class="input-field"
+                            required
+                            placeholder="0000 0000 0000 0000"
+                            min="16"
+                            max="16"
+                        />
+
+                    <label for="cvc">CVC</label>
+                    <input 
+                        type="number"
+                        class="input-field"
+                        required
+                        placeholder="000"
+                        min="3"
+                        max="3"
+                    />
+
+                    <label for="expiry-date">Expiry Date</label>
+                    <input 
+                        type="text"
+                        class="input-field"
+                        format="MM/YY"
+                        placeholder="MM/YY"
+                        minlength="4"
+                        maxlength="5"
+                        required
+                    />
+
+                    <button class="button__finish-order button">Finish Order</button>
+            </form>
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+
+            <section class="footer">
+
+                <section class="footer-title">
+                    <h2>News</h2>
+                    <ul>
+                        <li><a href="" class="footer__link">New Products</a></li>
+                        <li><a href="" class="footer__link">Inspiration</a></li>
+                        <li><a href="" class="footer__link">Guides</a></li>
+                        <li><a href="" class="footer__link">Information</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-title">
+                    <h2>Storename.no</h2>
+                    <ul>
+                        <li><a href="" class="footer__link">About Us</a></li>
+                        <li><a href="" class="footer__link">Cookies</a></li>
+                        <li><a href="" class="footer__link">Guidelines</a></li>
+                        <li><a href="" class="footer__link">Electronic Waste</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-title">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><a href="" class="footer__link">Online Chat</a></li>
+                        <li><a href="" class="footer__link">Email Us</a></li>
+                        <li><a href="" class="footer__link">Find Your Local Store</a></li>
+                        <li><a href="" class="footer__link">Apply For Job</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-title">
+                    <h2>Help</h2>
+                    <ul>
+                        <li><a href="" class="footer__link">Warranty Cases</a></li>
+                        <li><a href="" class="footer__link">Insurance Cases</a></li>
+                        <li><a href="" class="footer__link">Where is my delivery?</a></li>
+                        <li><a href="" class="footer__link">Can I return my purchase?</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section class="footer__copyright">
+                <p>Copyright &copy; All rights reserved</p>
+            </section>
+
+        </footer>
+        
+    </body>
+
+</html>

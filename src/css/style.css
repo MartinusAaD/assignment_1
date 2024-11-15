@@ -1,0 +1,28 @@
+li {
+  padding: 0.4rem 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-small);
+  color: var(--font-light);
+  background-image: var(--dark-gradient-backgroud-image);
+  padding: var(--padding-xs);
+  border-radius: var(--padding-xs);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-image: var(--darker-gradient-background-image);
+  cursor: pointer;
+}
+
+.button > p {
+  padding-right: var(--padding-xs);
+}
+
+.button:active {
+  transform: scale(0.9);
+}

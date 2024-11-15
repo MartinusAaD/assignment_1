@@ -1,0 +1,39 @@
+:root {
+  /* Colors */
+  --primary-gradient-background-image: linear-gradient(
+    to bottom,
+    rgb(106, 179, 179),
+    hsl(180, 25%, 36%)
+  );
+  --dark-gradient-backgroud-image: linear-gradient(
+    to bottom,
+    hsl(180, 32%, 36%),
+    hsl(180, 25%, 26%)
+  );
+  --darker-gradient-background-image: linear-gradient(
+    to bottom,
+    hsl(180, 32%, 30%),
+    hsl(180, 25%, 20%)
+  );
+  --primary-color: #57d1d18d;
+  --background-color: #f5f5f5;
+  --foreground-color: white;
+
+  /* Fonts & Colors */
+  --font-size-xs: 0.5rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 2rem;
+  --font-size-xl: 3rem;
+  --font-light: white;
+  --font-dark: black;
+
+  --boxshadow-all-sides: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+
+  /* Spacing */
+  --padding-xs: 0.5rem;
+  --padding-small: 1rem;
+  --padding-medium: 2rem;
+  --padding-large: 3rem;
+  --padding-xl: 4rem;
+}
